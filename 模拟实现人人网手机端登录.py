@@ -63,5 +63,5 @@ data = {
 # 发送登录请求
 responsen = session.post(login_url, data=data)
 
-# 展示登录界面的数据
+# 打印登录界面的数据
 print(response.content.decode())
