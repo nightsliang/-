@@ -6,7 +6,8 @@ session = requests.session()
 
 # 创建请求头
 session.headers = {
-	'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Mobile Safari/537.36'}
+	'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Mobile Safari/537.36',
+}
 
 # 准备rkey的url
 rkey_url = 'http://activity.renren.com/livecell/rKey'
@@ -60,7 +61,7 @@ data = {
 }
 
 # 发送登录请求
-responsen = session.post(login_url,data = data )
+responsen = session.post(login_url, data=data)
 
 # 展示登录界面的数据
 print(response.content.decode())
